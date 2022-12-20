@@ -1,38 +1,78 @@
-.App {
+
+.wrapper {
+  margin: 0 auto;
+}
+.sisi {
+  width: 20em;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header_select {
+  margin: 0 auto;
+  width: 30%;
+  padding: 1rem 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form_select {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 0.5rem; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.selected {
+  box-shadow: rgb(51 51 51) 0px 0px 0px 3px;
+}
+.list {
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  width: 50%;
 }
-
-.App-link {
-  color: #61dafb;
+.list_item {
+  text-align: center;
+  width: 40%;
+  margin: 1rem;
+  padding: 1rem 0;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav_menu {
+  background-color: rgb(245,245,245);
+}
+.nav_menu_ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 1rem;
+}
+.nav_menu_li {
+  margin: 0 1rem;
+}
+.nav_menu_li a{
+  text-decoration: none;
+  color: grey;
+  font-weight: 600;
+}
+.warning {
+  font-weight: bold;
+  color: 	rgb(220,20,60);
+  font-size: 2rem;
+}
+.schedule_counter {
+  color: grey;
+}
+.schedule_day {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 1280px){
+  .list {
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .nav_menu_ul {
+    display: flex;
+    flex-direction: column;
   }
+  
 }
