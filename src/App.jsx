@@ -19,77 +19,84 @@ import maths from './images/maths.png';
 import music from './images/music.png';
 import science from './images/science.png';
 import swimming from './images/swimming.png';
-
+import sport from './images/sport.png';
 
 function App() {
   const [weekDay, setWeekDay] = useState(JSON.parse(localStorage.getItem('weekDay')) || 'Monday');
 
   const [lessons, setLessons] = useState(JSON.parse(localStorage.getItem('lessonsList')) || [
       {
-          id: 1,
-          name: 'Art',
-          day: 'Monday',
-          image: art
+        id: 1,
+        name: 'Art',
+        day: 'Monday',
+        image: art
       },
       {
-          id: 2,
-          name: 'English',
-          day: 'Tuesday',
-          image: english
+        id: 2,
+        name: 'English',
+        day: 'Tuesday',
+        image: english
       },
       {
-          id: 3,
-          name: 'Maths',
-          day:  'Wednesday',
-          image: maths
+        id: 3,
+        name: 'Maths',
+        day:  'Wednesday',
+        image: maths
       },
       {
-          id: 4,
-          name: 'Music',
-          day: 'Wednesday',
-          image: music
+        id: 4,
+        name: 'Music',
+        day: 'Wednesday',
+        image: music
       },
       {
-          id: 5,
-          name: 'Biology',
-          day: 'Friday',
-          image: biology
+        id: 5,
+        name: 'Biology',
+        day: 'Friday',
+        image: biology
       },
       {
-          id: 6,
-          name: 'Geography',
-          day: 'Thursday',
-          image: geography
+        id: 6,
+        name: 'Geography',
+        day: 'Thursday',
+        image: geography
       },
       {
-          id: 7,
-          name: 'History',
-          day: 'Thursday',
-          image: history
+        id: 7,
+        name: 'History',
+        day: 'Thursday',
+        image: history
       },
-      {   id: 8,
-          name: 'IT',
-          day: 'Monday',
-          image: it
-      },
-      {
-          id: 9,
-          name: 'Science',
-          day: 'Friday',
-          image: science
+      {   
+        id: 8,
+        name: 'IT',
+        day: 'Monday',
+        image: it
       },
       {
-          id: 10,
-          name: 'Drama',
-          day: 'Tuesday',
-          image: drama
+        id: 9,
+        name: 'Science',
+        day: 'Friday',
+        image: science
       },
       {
-          id: 11,
-          name: 'Swimming',
-          day: 'Friday',
-          image: swimming
+        id: 10,
+        name: 'Drama',
+        day: 'Tuesday',
+        image: drama
       },
+      {
+        id: 11,
+        name: 'Swimming',
+        day: 'Friday',
+        image: swimming
+      },
+      {
+        id: 12,
+        name: 'Sport',
+        day: 'Thursday',
+        image: sport
+    }
    
 ])
 
